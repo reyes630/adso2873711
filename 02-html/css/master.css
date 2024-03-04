@@ -7,6 +7,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     color: #000000; /* LETTER COLOR */
+    font-family: Poppins;
 }
 
 nav.controls {
@@ -109,7 +110,7 @@ main {
     section{
         background-color: #0009;
         border-radius: 10px;
-        color: #000000;
+        color: #ffffff;
         padding: 10px;
         width: 400px;
         h3{
