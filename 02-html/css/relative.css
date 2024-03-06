@@ -28,6 +28,7 @@ main {
             background-color: #ccc;
             color: #333;
             font-size: 1.4rem;
+            padding: 10px;
             text-decoration: none;
             text-align: center;
             transition: all 0.4s ease-in;
