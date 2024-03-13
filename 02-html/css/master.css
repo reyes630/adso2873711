@@ -70,7 +70,7 @@ main {
 
         a:is(:link, :visited) {
             align-items: center;
-            background-color: #242222;
+            background-color: #0009;
             border-radius: 50px;
             color: rgba(255, 255, 255, 0.6);
             display: flex;
