@@ -3,14 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advance </title>
+    <title>Box</title>
     <!-- LINK OF STYLE -->
     <link rel="stylesheet" href="css/master.css">
     <style>
-        section[class] > p + p {
-            background: linear-gradient(to left, white, rgb(0, 102, 128));
-            color: #000000;
-            padding: 5px;
+        div.box {
+            align-items: center;
+            border: 4px dashed #fff9;
+            background-color: #0006;
+            display: flex;
+            font-size: 5rem;
+            justify-content: center;
+            padding: 1rem;
+            height: 200px;
+            margin: 20px auto;
+            width: 300px;
         }
     </style>
 
@@ -25,17 +32,12 @@
 
     <main>
         <header>
-            <h1>05 ADVANCE SELECTORS</h1>
-           <ul>
-            <li>Children (>)</li>
-            <li>Adjacent/Siblint (+)</li>
-            <li>Atribute (Class)</li>
-           </ul>
+          <h1>13 BOX MODEL</h1>
+          <h2>Es esencialmente un cuadro que envuelve cada elemento de HTML. Este consta de contenido, relleno, bordes y margenes </h2>
         </header>
 
-       <section class="example">
-            <p>CPIC</p>
-            <p>Regional Caldas</p>
+       <section>
+        <div class="box">BOX📦</div>
        </section>
     </main>
 </body>
