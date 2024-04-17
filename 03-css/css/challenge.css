@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;800&display=swap');
+
+body {
+    background-color: #17a053;
+    display: flex;
+    font-family: Poppins;
+    justify-content: center;
+    padding: 20px;
+}
+/* ESTE ES EL LOGO DE INICIO */
+.logo-sprite {
+    background: url(../images/spriteweb.png);
+    height: 190px;
+    width: 190px;
+    background-position: -10px 200px;
+    margin: 0 auto;
+
+}
+/* ESTE ES EL MENÚ */
+div.options {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+
+    a:is(:link, :visited) {
+        background-color: #0009;
+        color: #fff;
+        font-size: 1rem;
+        padding: 5px;
+        text-decoration: none;
+        text-align: center;
+        border-bottom: solid 4px #fff;
+    }
+
+    a:is(:hover) {
+        background-color: #000;
+        border-color: yellow;
+        transition: all 0.4s ease-in;
+    }
+}
+
+/* ESTE ES EL CSS DE LAS CAJAS PRINCIPALES */
+.boxs{
+    display: flex;
+    background-color: #0008;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    margin-top: 20px;
+
+}
+/* DIVISIONES DE LA CAJA 1 */
+.sprite1 {
+    border: 2px solid #fff;
+    width: 200px;
+    height: 200px;
+    background-image: url(../images/spriteweb.png);
+    background-position: 250px -5px;
+
+}
+
+.sprite2 {
+    border: 2px solid #fff;
+    width: 200px;
+    height: 200px;
+    background-image: url(../images/spriteweb.png);
+    background-position: 250px -5px;
+
+}
+
+.sprite3 {
+    border: 2px solid #fff;
+    width: 200px;
+    height: 200px;
+    background-image: url(../images/spriteweb.png);
+    background-position: 250px -5px;
+
+}
+/* DIVISION DEL TEXTO DE LA CAJA 1 */
+.textbox {
+    padding: 20px;
+    text-align:center;
+    font-weight: 800;
+    background-color: #fff8;
+}
+
+.boxs2 {
+    background-color: #0008;
+    padding: 1rem;
+    margin-top: 20px;
+}
+
+.content-text {
+    display: flex;
+    background-color: #ffffff;
+    gap: 1rem;
+    margin-top: 20px;
+}
+ 
+.img-sprite {
+    background-image: url(../images/spriteweb.png);
+    height: 80px;
+    width: 80px;
+    background-position: 500px 100px;
+    margin-top: 40px;
+}
+.img-lata {
+    background-image: url(../images/spriteweb.png);
+    height: 190px;
+    width: 100px;
+    background-position: -100px -200px;
+    float: left;
+}
+
+p{
+    width: 500px;
+    text-align: justify;
+}
+/* AQUI ESTA EL FOOTER */
+.footer {
+    background-color: #fff;
+   
+
+}
+.img-footer {
+    background-image: url(../images/spriteweb.png);
+    height: 200px;
+    width: 200px;
+}
