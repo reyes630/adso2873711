@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge🙉</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;800&display=swap');
+
+        * {
+            transition: all 0.2s ease-in;
+        }
+
+        body {
+            background-color: #71b3ff;
+            color: #fffc;
+            font-family: poppins, sans-serif;
+            font-weight: 400;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        main header figure.logo {
+            background: url(images/The_Simpsons_Logo.png) no-repeat center;
+            margin: 0 auto;
+            width: 919px;
+            height: 354px;
+        }
+
+        div.cajasInicio {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            padding: 1rem;
+            margin-top: 20px;
+        }
+
+        .box1 {
+            width: 300px;
+            height: 300px;
+            background-image: url(images/homeroFoto.jpg);
+        }
+
+        .box2 {
+            width: 300px;
+            height: 300px;
+            background-image: url(images/Marge-Magie.jpg);
+        }
+
+        .box3 {
+            width: 300px;
+            height: 300px;
+            background-image: url(images/BartFoto.jpg);
+        }
+
+        .box4 {
+            width: 300px;
+            height: 300px;
+            background-image: url(images/lisaFoto.jpg);
+        }
+
+        .textbox {
+            padding: 20px;
+            text-align: center;
+            background-color: #0005;
+            position: relative;
+            margin-top: 235px;
+            transition: all 0.5s ease-in;
+            
+        }
+        
+        .textbox:is(:hover) {
+            background-color: #0009;
+            height: 50px;
+            top: -25px;
+            
+        }
+
+        .content {
+            display: flex;
+            background-color: #1818188f;
+            gap: 1rem;
+            margin-top: 20px;
+        }
+
+        .imagetext {
+            display: flex;
+            margin-top: 40px;
+        }
+
+        p {
+            width: 500px;
+            text-align: justify;
+        }
+
+        /* ---------------------- */
+        /*       MEDIA QUERIES    */
+        /* --------------------- */
+        @media (max-width: 1024px) {
+            main header figure.logo {
+                background: url(images/The_Simpsons_Logo.png) no-repeat center;
+                margin: 0 auto;
+                width: 919px;
+                height: 354px;
+            }
+            div.cajasInicio {
+                display: flex;
+            }
+            
+        }
+        
+        
+        @media (max-width: 780px) {
+            main header figure.logo {
+                background: url(images/The_Simpsons_Logo2.png) no-repeat center;
+                width: 162px;
+                height: 156px;
+            }
+            
+            div.cajasInicio {
+                flex-direction: column;
+                display: flex;
+                align-items: center;
+                
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+            <figure class="logo"></figure>
+        </header>
+        <section>
+            <div class="cajasInicio">
+                <div class="box1 ">
+                    <div class="textbox">Homero</div>
+                </div>
+                <div class="box2 ">
+                    <div class="textbox">Marge and Magie</div>
+                </div>
+                <div class="box3 ">
+                    <div class="textbox">Bart</div>
+                </div>
+                <div class="box4 ">
+                    <div class="textbox">Lisa</div>
+                </div>
+            </div>
+            <!--------------------SECTION TWO---------------->
+            <div class="img-text">
+                <div class="content">
+                    <div class="imagetext1">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem molestiae quod unde
+                        dolore, necessitatibus perspiciatis veniam provident tempora omnis error odit quo quibusdam.
+                        Quod, recusandae incidunt illum ex quis molestiae architecto exercitationem laborum autem
+                        obcaecati! Quod, ipsa dolorem? Perspiciatis eveniet labore dignissimos ipsum iusto vitae!
+                        Quas recusandae eum obcaecati laboru
+                    </p>
+                </div>
+                <div class="content">
+                    <div class="imagetext2">
+                    </div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt temporibus vel facere pariatur
+                        hic aliquid saepe laboriosam quisquam quaerat quasi error suscipit magni debitis, numquam soluta
+                        sed at explicabo dolorum accusamus voluptatum. Labore, voluptatibus aspernatur. Inventore,
+                        vitae! Soluta incidunt porro, corrupti sequi assumenda aliquam? Eum in a itaque consectetur
+                        quisquam?</p>
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>
