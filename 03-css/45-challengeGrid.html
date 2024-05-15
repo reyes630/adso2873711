@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Style </title>
+    <!-- LINK OF STYLE -->
+    <link rel="stylesheet" href="css/master.css">
+    <style>
+        section {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 1rem;
+        }
+        section div.box {
+            border: 2px solid red;
+            background-color: #fff9;
+            width: 120px;
+            height: 120px
+        }
+        div.box2 {
+            grid-column-start: 2;
+			grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            min-height: 27vh;
+        }
+        div.box3 {            
+            grid-column-start: 3;
+			grid-column-end: 4;
+        }
+        div.box4 {            
+            grid-column-start: 1;
+			grid-column-end: 2
+        }
+        div.box5 {            
+            grid-column-start: 3;
+			grid-column-end: 4;
+        }
+        div.box6 {
+            grid-column-start: 1;
+			grid-column-end: 3;
+            min-width: 27vh;
+        }
+        div.box7 {            
+            grid-column-start: 3;
+			grid-column-end: 4;
+        }
+    </style>
+</head>
+<body>
+    <!------------ BOTON DE REGRESO ----------------->
+    <nav class="controls">
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000000" d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+        </a>
+    </nav>
+
+    <main>
+        <header>
+            <h1>45 CHALLENGE GRID</h1>
+            <h2>Irregular Galeria</h2>
+        </header>
+        <section>
+            <div class="box box1">1</div>
+            <div class="box box2">2</div>
+            <div class="box box3">3</div>
+            <div class="box box4">4</div>
+            <div class="box box5">5</div>
+            <div class="box box6">6</div>
+            <div class="box box7">7</div>
+
+        </section>
+    </main>
+</body>
+</html>
