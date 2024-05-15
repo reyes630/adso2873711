@@ -79,8 +79,9 @@
             top: -25px;
 
         }
-        .section2 {
+        section div.imagen2 {
             justify-content: center;
+            display: grid none;
         }
 
         article.imagen1 {
@@ -90,6 +91,16 @@
         article.imagen2 {
             background: url(images/BolaNieve.jpg)no-repeat left;
         }
+
+        div.section2{
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+            margin-top: 20px;
+            width: auto;
+        }
+
+       
 
         p {
             align-items: center;
@@ -112,6 +123,21 @@
             div.cajasInicio {
                 display: flex;
             }
+            section.center {
+                justify-content: center;
+            }
+
+            div.section2 {
+                overflow: scroll;
+                height: 200px;
+            }
+
+
+            p {
+                box-sizing: border-box;
+                justify-content: center;
+                text-align: justify;
+            }
 
         }
 
@@ -129,16 +155,20 @@
                 align-items: center;
 
             }
+            section.center {
+                justify-content: center;
+            }
 
             div.section2 {
+                margin-top: 20px;
                 overflow: scroll;
                 height: 200px;
             }
 
+
             p {
                 box-sizing: border-box;
                 justify-content: center;
-                overflow-y: scroll;
                 text-align: justify;
             }
         }
@@ -167,10 +197,11 @@
             </div>
             <!--------------------SECTION TWO---------------->
         </section>
-        <section>
+        <section class="center">
             <div class="section2">
                 <div class="imagen1">
                     <img src="images/huesos.jpg" alt="" width="200px">
+                    <div class="text">
                     <h2>Huesos</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus officiis quisquam eveniet
                         voluptatem
@@ -187,13 +218,15 @@
                         nam itaque harum minus, illum architecto, accusamus eligendi deserunt? Illo suscipit tempora,
                         aut
                         quod molestiae vero accusamus culpa voluptatibus quasi.</p>
+                    </div>
                 </div>
             </div>
             <div class="section2">
                 <div class="imagen2">
                     <img src="images/BolaNieve.jpg" alt="" width="200px">
-                    <h2>Bola de Nieve</h2>
                     <div class="text">
+                    <h2>Bola de Nieve</h2>
+                    
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur expedita nisi eveniet et
                             ullam
                             possimus doloremque necessitatibus alias saepe autem quae, ducimus, hic doloribus officia
@@ -211,6 +244,7 @@
                             mollitia reiciendis, nobis quod tenetur qui? Exercitationem nam ad obcaecati consequuntur
                             blanditiis,
                             saepe voluptatum quod!</p>
+                        </div>
 
                     </div>
                 </div>
