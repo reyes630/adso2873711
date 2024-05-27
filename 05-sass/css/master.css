@@ -13,7 +13,7 @@ body {
 nav.controls {
     position: fixed;
     a:is(:link, :visited) {
-        background-color: #c2c0c0;
+        background-color: #cfcece;
         border-radius: 50px;
         display: flex;
         align-items: center;
