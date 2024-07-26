@@ -4,96 +4,189 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
-        
         * {
-            padding: 0;
             margin: 0;
+            padding: 0;
         }
-        
         body {
-            background-size: cover;
             font-family: 'Poppins', sans-serif;
             color: #000000;
         }
+
         header {
-            background: url("./images/section1.png") no-repeat;
-            background-size: 100%;
-            height: 100vh;
+            background: url("./images/section1.png") no-repeat center center;
+            background-size: cover;
+            min-height: 100vh;
         }
-        .img_name img {
-            margin-left: 30px;
-            width: 40px;
-            height: 40px;
-        }
-        
-        .img_name h2 {
-            font-size: 18px;
-        }
-        
-        .lastname {
-            color: #ffffff;
-        }
-        .text {
-            margin-top: 10%;
-            margin-left: 30px;
-        }
-        .descripcion {
 
-            width: 50%;
+
+        .section2 {
+            background-image: url(./images/section2.png);
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
         }
+        .section3 {
+            background-image: url(./images/section3.png);
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+        }
+        .section4 { 
+            background-image: url(./images/section4.png); 
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+        }
+        .section5 { 
+            background-image: url(./images/section5.png);
+            min-height: 50vh;
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+        }
+
+        .lastname { 
+            color: #ffffff; 
+        }
+        
         .boton {
-            margin-left: 30px;
-            color: #000;
-            width: 100px;
             background-color: #ECD6C0;
+            width: 100px;
         }
 
-        
+        .progress { 
+            height: 10px; 
+        }
     </style>
 </head>
 
 <body>
-    <header>
-        <section class="section1">
+    <header class="py-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand d-flex align-items-center" href="#">
+                        <img src="./images/image.png" alt="perfil" width="40" height="40" class="me-2 top-100">
+                        <span>Esteban <span class="lastname">Reyes</span></span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="#Home">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#Services">Services</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#Portfolio">Portfolio</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <section id="Home" class="py-5">
+            <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-6">
-                        <div class="img_name d-flex align-items-center">
-                            <img src="./images/image.png" alt="perfil">
-                            <h2 class="name m-0 ms-2">Esteban</h2>
-                            <h2 class="lastname m-0 ms-2">Reyes</h2>
-                        </div>
+                        <p class="lead">Hello I'm</p>
+                        <h1 class="display-4">Esteban Reyes</h1>
+                        <p>Tecnólogo en Análisis y desarrollo de Software</p>
+                        <p class="mb-4">Yo soy un programador con un título técnico y auxiliar en programación apasionado por la tecnología y siempre actualizado</p>
+                        <button class="btn boton rounded">Hire Me</button>
                     </div>
-                    <div class="col-md-6">
-                        <nav class="d-flex justify-content-end">
-                            <a class="nav-link px-2" href="#">Home</a>
-                            <a class="nav-link px-2" href="#">About</a>
-                            <a class="nav-link px-2" href="#">Services</a>
-                            <a class="nav-link px-2" href="#">Portfolio</a>
-                        </nav>
+                    <div class="col-md-6 mt-4 mt-md-10px">
+                        <img class="img-fluid" src="./images/foto1.png" alt="foto1">
                     </div>
                 </div>
-                <div class="text">
-                    <p class="hello"> Hello I'm</p>
-                    <p class="nombre">Esteban Reyes</p>
-                    <p class="Tgo">Tecnologo en Analisis y desarrollo de Software</p>
-                    <p class="descripcion">Yo soy un programador con un titulo tecnico y auxiliar en programacion apacionado por la tecnologia y siempre actualizado</p>
-                </div>
-                <div class="boton rounded">
-                    <p class="text-center">Hire Me</p>
-                </div>
-                
-        </section>
-        <section class="section2">
-        </section>
-        <section class="section3">
-        </section>
-        <section class="section4">
-        </section>
-        <section class="section5">
+            </div>
         </section>
     </header>
+
+    <section id="About" class="section2 py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img class="img-fluid" src="./images/CuadroFoto.png" alt="">
+                </div>
+                <div class="col-md-6">
+                    <p class="lead">About</p>
+                    <h2 class="display-6 fw-bold">Why you Hire Me?</h2>
+                    <p>Software developer with 1 year of experience. Passionate about technological innovation and creating efficient solutions that improve user experience and optimize business processes.</p>
+                    
+                    <div class="my-4">
+                        <p>ui/ux Design</p>
+                        <div class="progress mb-3">
+                            <div class="progress-bar" style="width: 75%">75%</div>
+                        </div>
+                        <p>Web design</p>
+                        <div class="progress mb-3">
+                            <div class="progress-bar" style="width: 65%">65%</div>
+                        </div>
+                        <p>HTML/CSS</p>
+                        <div class="progress mb-3">
+                            <div class="progress-bar" style="width: 90%">90%</div>
+                        </div>
+                        <p>Sketch</p>  
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 50%">50%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Services" class="section3 py-5">
+        <div class="container text-center">
+            <p class="lead">services</p>
+            <h2 class="display-6 fw-bold mb-5">Service I Provide</h2>
+            <div class="row g-4">
+                <div class="col-md-4"><img src="./images/Services1.png" class="img-fluid" alt="Service 1"></div>
+                <div class="col-md-4"><img src="./images/Services2.png" class="img-fluid" alt="Service 2"></div>
+                <div class="col-md-4"><img src="./images/Services3.png" class="img-fluid" alt="Service 3"></div>
+                <div class="col-md-4"><img src="./images/Services4.png" class="img-fluid" alt="Service 4"></div>
+                <div class="col-md-4"><img src="./images/Services5.png" class="img-fluid" alt="Service 5"></div>
+                <div class="col-md-4"><img src="./images/Services6.png" class="img-fluid" alt="Service 6"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Portfolio" class="section4 py-5">
+        <div class="container">
+            <p class="lead">Portafolio</p>
+            <h2 class="display-6 fw-bold mb-5">Last Projects</h2>
+            <div class="row g-4">
+                <div class="col-md-4"><img src="./images/proy1.png" class="img-fluid" alt="Project 1"></div>
+                <div class="col-md-4"><img src="./images/proy2.png" class="img-fluid" alt="Project 2"></div>
+                <div class="col-md-4"><img src="./images/proy3.png" class="img-fluid" alt="Project 3"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="section5 py-5 text-center">
+        <div class="container">
+            <div class="d-flex justify-content-center align-items-center mb-4">
+                <img src="./images/image.png" alt="perfil" width="40" height="40" class="me-2">
+                <h2 class="m-0">Esteban <span class="lastname">Reyes</span></h2>
+            </div>
+            <div class="mb-4">
+                <img src="./images/redes.png" alt="redes" class="img-fluid">
+            </div>
+            <h3 class="display-6 fw-bold mb-4">reyesagudeloesteban9@gmail.com</h3>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#Home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Portfolio">Portfolio</a></li>
+                </ul>
+            </div>
+            <p>© All rights reserved 2024</p>
+        </div>
+    </footer>
 </body>
 </html>
