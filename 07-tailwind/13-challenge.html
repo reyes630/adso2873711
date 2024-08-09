@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+       
+        .screen {
+            display: none;
+            /* Ocultar todas las secciones */
+        }
+
+        /* Ids y cases de las secciones para dar click y que aparezacan */
+        #section1:checked~.section1,
+        #section2:checked~.section2,
+        #section3:checked~.section3 {
+            display: block;
+        }
+    </style>
+</head>
+
+<body class="bg-blue-500 bg-cover bg-center p-8 flex justify-center items-center min-h-screen">
+    <!------ Contenedor del sitio web  -->
+    <div class="flex flex-col items-center space-y-4 w-full max-w-4xl">
+        <input type="radio" id="section1" name="sections" class="hidden" checked>
+        <input type="radio" id="section2" name="sections" class="hidden">
+        <input type="radio" id="section3" name="sections" class="hidden">
+
+        <!-- SECTION 1 -->
+        <section class="screen section1 bg-yellow-400 rounded-xl w-full max-w-md">
+            <div class="w-full h-auto  mb-4 flex justify-center items-center">
+                <img src="images/challengeimg1.png" alt="" class="rounded-lg w-[100%]">
+            </div>
+            <h2 class=" text-4xl text-black-50 text-center font-bold  mb-8 uppercase text-black mt-4">Los Simpsons</h2>
+            <p class="text-center mb-4 mt-4 ">The serie of USA, was create in 1987.</p>
+            <div class="flex justify-center mt-4">
+                <label for="section2" class="bg-black text-white py-3 px-8 rounded-[10px] text-lg cursor-pointer mb-8">Get
+                    Started</label>
+            </div>
+        </section>
+
+        <!-- SECTION 2 -->
+        <section class="screen section2 bg-yellow-400 rounded-xl p-6 w-full max-w-md">
+
+            <div class="flex items-center mb-4">
+                <label for="section1" class="mr-2 cursor-pointer">
+                    <img class="w-8 h-8" src="images/flecha.png" alt="">
+                </label>
+                <h2 class="text-2xl font-bold text-black-50">Temporada 35</h2>
+            </div>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <div class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center mr-3 font-bold">01
+                    </div>
+                    <div>
+                        <p class="font-semibold">Homer's Crossing</p>
+                    </div>
+                </div>
+                <div class="w-full h-48 bg-blue-500 rounded-lg mb-4">
+                    <img src="images/challengeimg2.png" alt="imagen" class="w-full h-full object-cover rounded-lg">
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center mr-3 font-bold">02
+                    </div>
+                    <div>
+                        <p class="font-semibold">A Mid-Childhood Night's Drea</p>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center mr-3 font-bold">03
+                    </div>
+                    <div>
+                        <p class="font-semibold">McMansion & Wife</p>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center mr-3 font-bold">04
+                    </div>
+                    <div>
+                        <p class="font-semibold">Thirst Trap: A Corporate Love Story</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <label for="section3"
+                    class="bg-black text-white py-3 px-8 rounded-[10px] text-lg cursor-pointer">Next</label>
+            </div>
+        </section>
+
+        <!-- SECTION 3 -->
+        <section class="screen section3 bg-yellow-400 rounded-xl p-6 w-full max-w-md">
+            <div class="flex items-center mb-4">
+                <label for="section2" class="mr-2 cursor-pointer">
+                    <img class="w-8 h-8" src="images/flecha.png" alt="">
+                </label>
+                <h2 class="text-2xl font-bold text-black-50">Choose Your Favorite</h2>
+            </div>
+
+                <div class=" relative max-w-sm mx-auto bg-blue-500 rounded-xl flex flex-col divide-y divide-black">
+                    <div class="flex items-center gap-4 p-4">
+                        <div class="flex flex-col">
+                            <strong class="text-black text-sm font-medium">1. Homero al Cubo</strong>
+                            <span class="text-gray-800 text-sm font-medium">Temporada 7</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 p-4">
+                        <div class="flex flex-col">
+                            <strong class="text-black text-sm font-medium">La niebla que pone al reves a la gente</strong>
+                            <span class="text-gray-800 text-sm font-medium">Temporada 6</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 p-4">
+                        <div class="flex flex-col">
+                            <strong class="text-black text-sm font-medium">Homero Cabeza de rosquilla</strong>
+                            <span class="text-gray-800 text-sm font-medium">Temporada 5</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 p-4">
+                        <div class="flex flex-col">
+                            <strong class="text-black text-sm font-medium">Los delfines en tierra firme</strong>
+                            <span class="text-gray-800 text-sm font-medium">Temporada 12</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-600 italic mb-4">Las caistas de terror. Iconos de Los Simpsons</p>
+
+                <div class="text-center mt-4">
+                    <button 
+                        class="bg-black text-white py-3 px-8 rounded-[10px] text-lg cursor-pointer">Star Selection</button>
+                </div>
+                
+            </div>
+
+    </section>
+    </div>
+</body>
+
+</html>
