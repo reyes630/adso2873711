@@ -1,0 +1,199 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    font-family: inter;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 20px;
+}
+
+.headerGame{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-volver {
+    background: transparent url(../images/vehicle/btn-volver.svg) no-repeat;
+    border: none;
+    cursor: pointer;
+    width: 53px;
+    height: 53px;
+}
+div.text {
+    display: flex;
+    gap: 10px;
+}
+.Ski, .Change{
+    color: #FF6F00;
+}
+
+
+div.headerGame button.btn-mode {
+    border: none;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    background: transparent url(../images/vehicle/btn-mode.svg) no-repeat;
+}
+
+div button {
+    transition: all 0.2s ease-in;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+div.attributes {
+    background: url(../images/vehicle/atributes.svg) no-repeat;
+    width: 322px;
+    height: 200px;
+    margin: 1rem auto;
+    position: relative;
+}
+div.attributes span {
+    position: absolute;
+    width: 60px;
+    font-size: 12px;
+    font-weight: bold;
+}
+div.attributes span.vehicle {
+    top: 120px;
+    left: 18px;
+}
+div.attributes span.brand {
+    top: 120px;
+    left: 95px;
+}
+div.attributes span.model {
+    top: 120px;
+    left: 180px;
+}
+div.attributes span.color {
+    top: 120px;
+    left: 255px;
+}
+
+div.screen {
+    display: flex;
+}
+
+div.screen div.Landscape {
+    background-color: rgba(195, 191, 191, 0.6);
+    border: 3px solid black;
+    height: 201px;
+    width: 300px;
+}
+
+div.div2 {
+    flex-direction: column;
+    text-align: center;
+    font-size: 10px;
+    .Cars {
+        margin-top: -20px; 
+    }
+
+}
+
+
+div.screen button {
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    width: 41px;
+    height: 39px;
+}
+
+div.Methods {
+    width: 322px;
+    height: 25px;
+    margin: 1rem auto;
+    position: relative;
+    background: url(../images/vehicle/Methods.svg) no-repeat;
+}
+
+div.methods button{
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+.btn-prev {
+    background: url(../images/vehicle/btn-prev.svg) no-repeat;  
+
+}
+.btn-next {
+    background: url(../images/vehicle/btn-next.svg) no-repeat;
+}
+
+.btn-start {
+    background: url(../images/vehicle/btn-start.svg) no-repeat;
+}
+.btn-stop {
+    background: url(../images/vehicle/btn-stop.svg) no-repeat;
+}
+.btn-back {
+    background: url(../images/vehicle/btn-back.svg) no-repeat;
+}
+.btn-forward {
+    background: url(../images/vehicle/btn-forward.svg) no-repeat;
+}
+.btn-turnoff {
+    background: url(../images/vehicle/btn-turnOff.svg) no-repeat;
+}
+
+
+
+
+
+
+
+
+
+section.dark {
+    background-color: black;
+    color: #fff;
+
+   .btn-volver {
+        background: transparent url(../images/vehicle/btn-volver-dark.svg) no-repeat;
+    }
+   div.headerGame button.btn-mode {
+       background: transparent url(../images/vehicle/btn-mode-dark.svg) no-repeat;
+   }
+
+   div.attributes {
+    background: url(../images/vehicle/atributes-dark.svg) no-repeat;
+    }
+
+    div.Methods {
+        background: url(../images/vehicle/methods-dark.svg) no-repeat;
+    }
+
+    .btn-prev {
+        background: url(../images/vehicle/btn-prev-dark.svg) no-repeat;  
+    
+    }
+    .btn-next {
+        background: url(../images/vehicle/btn-next-dark.svg) no-repeat;
+    }
+    
+    .btn-start {
+        background: url(../images/vehicle/btn-start-dark.svg) no-repeat;
+    }
+    .btn-stop {
+        background: url(../images/vehicle/btn-stop-dark.svg) no-repeat;
+    }
+    .btn-back {
+        background: url(../images/vehicle/btn-back-dark.svg) no-repeat;
+    }
+    .btn-forward {
+        background: url(../images/vehicle/btn-forward-dark.svg) no-repeat;
+    }
+    .btn-turnoff {
+        background: url(../images/vehicle/btn-turnOff-dark.svg) no-repeat;
+    }
+
+}
