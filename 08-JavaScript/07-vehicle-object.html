@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+                
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+        body {
+            font-family: inter;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            padding: 20px;
+        }
+        section.light {
+            /* display: none; */
+            background-color: #F0F2F2;
+            border-radius: 10px;
+            width: 350px;
+            height: 650px; 
+            padding: 20px;
+        }
+        .headerGame{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: space-between;
+        }
+        div.text {
+            display: flex;
+            gap: 10px;
+        }
+        .Ski, .Change{
+            color: #FF6F00;
+        }
+
+        section.headerGame button {
+            border: none;
+            cursor: pointer;
+            width: 20px;
+            height: 20px;
+        }
+        section.headerGame button.btn-light {
+            background: transparent url(images/vehicle/btn-light.svg) no-repeat;
+        }
+
+        section button {
+            transition: all 0.2s ease-in;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        section.atributes {
+            background: url(images/vehicle/atributes.svg) no-repeat;
+            width: 322px;
+            height: 200px;
+            margin: 1rem auto;
+            position: relative;
+        }
+        section.atributes span {
+            position: absolute;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        section.atributes span.vehicle {
+            top: 120px;
+            left: 22px;
+        }
+        section.atributes span.brand {
+            top: 120px;
+            left: 105px;
+        }
+        section.atributes span.model {
+            top: 120px;
+            left: 180px;
+        }
+        section.atributes span.color {
+            top: 120px;
+            left: 260px;
+        }
+
+        section.screen {
+            display: flex;
+        }
+
+        section.screen div.Landscape {
+            background-color: #fff9;
+            border: 3px solid black;
+            height: 201px;
+            width: 262px;
+        }
+
+        div.div2 {
+            flex-direction: column;
+        }
+
+        .textCars { 
+            text-align: center;
+            font-size: 10px;
+            .Cars {
+                margin-top: -20px;
+            
+            }
+        }
+
+        section.screen button {
+            
+            border: none;
+            cursor: pointer;
+            width: 41px;
+            height: 39px;
+        }
+
+        .btn-prev {
+            background: url(images/vehicle/btn-prev.svg) no-repeat;
+            
+
+        }
+        .btn-next {
+            background: url(images/vehicle/btn-next.svg) no-repeat;
+        }
+
+        section.dark {
+            display: none;
+        color: #fff;
+        background-color: #000;
+        border-radius: 10px;
+        width: 400px;
+        height: 700px; 
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="light">
+            <section class="headerGame">
+                <div class="volver">
+                    <img src="images/vehicle/btn-volver.svg" alt="flecha">
+                </div>
+                <div class="text">
+                    <h2 class="Object">Object</h2>
+                    <h2 class="Ski">JetSki</h2>
+                </div>
+                <button class="btn-light"></button>
+            </section>
+            <section class="atributes">
+                    <span class="vehicle">jetski</span>
+                    <span class="brand">Mar</span>
+                    <span class="model">2020</span>
+                    <span class="color">blue</span>
+                </div>
+            </section>
+            <section class="screen">
+                <div class="Landscape"></div>
+                <div class="div2">
+                    <div class="textCars">
+                        <h2 class="Change">Change</h2>
+                        <h2 class="Cars">Cars</h2>
+                    </div>
+                    <button class="btn-prev"></button>
+                    <button class="btn-next"></button>
+                </div>
+            </section>
+
+            <section class="methods">
+                <div class="tittleMethods"></div>
+        
+                <button class="btn-start"></button>
+                <button class="btn-stop"></button>
+                <button class="btn-back"></button>
+                <button class="btn-forward"></button>
+                <button class="btn-turnoff"></button>
+            </section>
+        </section>
+
+        <!-- SECTION DARk  -->
+        <section class="dark">
+
+            <section class="headerGame">
+                <div class="volver"></div>
+                <h2 class="Object">Object</h2>
+                <h2 class="Ski">JetSki</h2>
+                <div class="mode"></div>
+            </section>
+            <section class="atributes">
+                <div class="tittleAtributes"></div>
+                <div class="line"></div>
+        
+                <div class="cardsAtributes">
+                    <div class="nameAtribute"></div>
+                    <div class="card"></div>
+        
+                    <div class="nameAtribute"></div>
+                    <div class="card"></div>
+        
+                    <div class="nameAtribute"></div>
+                    <div class="card"></div>
+        
+                    <div class="nameAtribute"></div>
+                    <div class="card"></div>
+                </div>
+            </section>
+        
+            <section class="visualization">
+                <div class="screen"></div>
+                <div class="btn">
+                    <p></p>
+                    <p></p>
+                    <div class="btnRigth"></div>
+                    <div class="btnLeft"></div>
+                </div>
+            </section>
+            <section class="methods">
+                <div class="tittleMethods"></div>
+                <div class="line"></div>
+        
+                <div class="btnMethods"></div>
+                <p class="nameMethod"></p>
+        
+                <div class="btnMethods"></div>
+                <p class="nameMethod"></p>
+        
+                <div class="btnMethods"></div>
+                <p class="nameMethod"></p>
+        
+                <div class="btnMethods"></div>
+                <p class="nameMethod"></p>
+        
+                <div class="btnMethods"></div>
+                <p class="nameMethod"></p>
+            </section>
+        </section>
+
+    </main>
+    
+</body>
+</html>
