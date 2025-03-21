@@ -239,6 +239,7 @@
         .desaparecer {
             display: none;
         }
+
         /*STYLE DE RESULTADO */
 
         .title-result {
@@ -397,19 +398,23 @@
                     src: selectedImage.src,
                     alt: selectedImage.alt
                 };
-                // Añadir la imagen dpeendiendo del estado del btn
-                if (toggleBtn.checked) {
-                    // Final
-                    imagesArray.push(imageData);
+
+                if (!isNaN(position) && position >= 0 && position <= imagesArray.length) {
+                    imagesArray.splice(position, 0, imageData);
                 } else {
-                    //Inicio
-                    imagesArray.unshift(imageData);
+                    if (toggleBtn.checked) {
+                        imagesArray.push(imageData);
+                    } else {
+                        imagesArray.unshift(imageData);
+                    }
                 }
+
                 renderResultsList();
             } else {
                 alert('Por favor, selecciona una imagen primero!');
             }
         });
+
 
         // Eliminar Imagen
         btnLess.addEventListener('click', function () {
@@ -419,7 +424,7 @@
                 if (!isNaN(position) && position >= 0 && position < imagesArray.length) {
                     imagesArray.splice(position, 1);
                 } else {
-                    //Eliminar 
+                    //Eliminar btn
                     if (toggleBtn.checked) {
 
                         imagesArray.pop();
@@ -431,6 +436,7 @@
                 renderResultsList();
             }
         });
+
 
 
     </script>
