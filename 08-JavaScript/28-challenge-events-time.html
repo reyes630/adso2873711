@@ -236,6 +236,8 @@
                 </div>
                 <div class="homero">
                 </div>
+                <audio id="brocoliSound" src="images/homerEat/audioHomer.mp3" preload="auto"></audio>
+
                 <div class="overlay" id="overlay"></div>
 
                 <!-- Modal Ganaste -->
@@ -336,7 +338,7 @@
  
          moverFondo(); */
 
-        // Mover a Homer0
+        // Mover a Homero
         let leftPosition = 50;
         document.addEventListener("keyup", (event) => {
             if (event.keyCode === 37) {
@@ -356,9 +358,9 @@
             }
         });
 
-        // Variables del juego
+        // Variables 
         let vidas = 3;
-        let tiempoRestante = 10;
+        let tiempoRestante = 50;
         const vidaElements = document.querySelectorAll(".vida img");
         const timeElement = document.querySelector(".time");
         const contenedorJuego = document.querySelector(".contenedor-juego");
@@ -394,6 +396,7 @@
                     clearInterval(interval);
                     item.remove();
                     if (item.dataset.tipo === "brocoli") {
+                        document.getElementById("brocoliSound").play();
                         vidas--;
                         actualizarVidas();
                         if (vidas <= 0) {
