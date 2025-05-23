@@ -226,7 +226,7 @@
             <div class="contenedores contenedor-juego hidden">
                 <div class="information">
                     <button class="btnvolver"></button>
-                    <div class="time">Time: 03:30</div>
+                    <div class="time">Time: </div>
                     <div class="vida">
                         <img src="images/homerEat/vida.svg" alt="">
                         <img src="images/homerEat/vida.svg" alt="">
@@ -289,6 +289,8 @@
             contInicio.classList.remove('hidden');
         });
 
+       
+
         // Muestra el modal de Ganaste
         let juegoTerminado = false; // bandera para evitar múltiples finales
 
@@ -312,6 +314,8 @@
             clearInterval(crearComidaInterval);
             clearInterval(tiempoInterval);
         }
+
+        
         // Función para cerrar los modales
         function cerrarModal() {
             modalGanaste.style.display = 'none';
